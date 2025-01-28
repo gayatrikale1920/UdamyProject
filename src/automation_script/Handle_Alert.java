@@ -15,7 +15,7 @@ public class Handle_Alert {
         driver.findElement(By.xpath("//input[@type='submit']")).click();
      Alert al = driver.switchTo().alert();
      al.accept();
-        
+        driver.close();
 	}
 
 }
