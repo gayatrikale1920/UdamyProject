@@ -10,13 +10,15 @@ public class Handle_Alert {
 	public static void main(String[] args) {
 	 
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://mypage.rediff.com/login/dologin");
         driver.findElement(By.xpath("//input[@type='submit']")).click();
      Alert al = driver.switchTo().alert();
      al.accept();
-     
-        
+        driver.close();
+        System.out.println("successfully done");
+
 	}
 
 }
