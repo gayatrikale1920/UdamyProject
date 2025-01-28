@@ -16,6 +16,7 @@ public class Handle_Alert {
      Alert al = driver.switchTo().alert();
      al.accept();
         driver.close();
+		// I am adding comment...
 	}
 
 }
